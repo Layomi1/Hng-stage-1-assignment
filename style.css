@@ -9,11 +9,13 @@ body {
   text-align: center;
   padding: 150px 300px;
 }
-
+h1 {
+  margin-bottom: 10px;
+}
 .form {
   border: 1px solid #000;
   height: 450px;
-  padding: 100px;
+  padding: 50px 100px;
   text-align: left;
 }
 
