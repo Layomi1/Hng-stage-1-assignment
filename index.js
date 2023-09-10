@@ -1,7 +1,7 @@
 let user = {
   name: "Oluwalayomi Lawore",
   track: "Frontend",
-  gitHubUrl: "https://github.com/Layomi1/Hng-stage-1-assignment",
+  githubURL: "https://github.com/Layomi1/zuri-internship-1",
   day: [
     "Sunday",
     "Monday",
@@ -44,8 +44,8 @@ function updateDateTime() {
     ":" +
     today.getUTCSeconds();
 
-  const gitHubUrl = document.querySelector('[data-testid="gitHubUrl"]');
-  gitHubUrl.innerHTML = user.gitHubUrl;
+  const githubURL = document.querySelector('[data-testid="githubURL"]');
+  githubURL.innerHTML = user.githubURL;
 }
 
 // Call the function initially and set an interval to update it every minute
