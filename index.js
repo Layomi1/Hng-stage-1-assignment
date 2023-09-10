@@ -1,8 +1,7 @@
 let user = {
-  image: "/images/you.jpg",
   name: "Oluwalayomi Lawore",
   track: "Frontend",
-  giHubUrl: "",
+  gitHubUrl: "https://github.com/Layomi1/Hng-stage-1-assignment",
   day: [
     "Sunday",
     "Monday",
@@ -20,7 +19,7 @@ function updateDateTime() {
   const slackDisplayImage = document.querySelector(
     '[data-testid="slackDisplayImage"]'
   );
-  slackDisplayImage.append = user.image;
+  slackDisplayImage.src = "./images/you.jpg";
   // name
   const slackUserName = document.querySelector('[data-testid="slackUserName"]');
   slackUserName.textContent = user.name;
@@ -41,11 +40,12 @@ function updateDateTime() {
     "Time: " +
     today.getUTCHours() +
     ":" +
-    (today.getUTCMinutes() < 10 ? "0" : "") +
-    today.getUTCMinutes();
+    today.getUTCMinutes() +
+    ":" +
+    today.getUTCSeconds();
 
   const gitHubUrl = document.querySelector('[data-testid="gitHubUrl"]');
-  gitHubUrl.textContent = "GitHub Url: " + user.gitHubUrl;
+  gitHubUrl.innerHTML = user.gitHubUrl;
 }
 
 // Call the function initially and set an interval to update it every minute
